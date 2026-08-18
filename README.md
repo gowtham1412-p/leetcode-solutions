@@ -1,49 +1,58 @@
-# 🚀 LeetCode DSA & Placement Preparation
+# 🧩 LeetCode DSA & Placement Journey
 
 <p align="center">
-  <b>My journey of mastering Data Structures & Algorithms for placements.</b>
+  <img src="https://img.shields.io/badge/LeetCode-DSA%20Journey-orange?style=for-the-badge&logo=leetcode" />
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" />
+  <img src="https://img.shields.io/badge/Placement-Preparation-success?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA-In%20Progress-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode">
-  <img src="https://img.shields.io/badge/Placement-Preparation-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/GitHub-Automated%20Sync-black?style=for-the-badge&logo=github">
+  <b>Solving • Learning • Improving • Preparing for Placements 🚀</b>
 </p>
 
 ---
 
-## 🎯 About This Repository
+## 👨‍💻 About My Journey
 
-This repository contains my **LeetCode Data Structures & Algorithms practice** and is maintained as part of my **placement preparation journey**.
+This repository contains my **Data Structures & Algorithms practice** from LeetCode.
 
-The main goal is not just to solve problems, but to:
+I am using this repository to track my progress, improve problem-solving skills, understand important DSA patterns, and prepare for **coding assessments and technical interviews**.
 
-- 🧠 Improve problem-solving skills
-- ⚡ Recognize common DSA patterns
-- 📈 Improve coding speed
-- 💡 Understand optimized approaches
-- ⏱️ Analyze time and space complexity
-- 🔁 Revise previously solved problems
-- 🏢 Prepare for technical interviews and coding assessments
-
-New accepted LeetCode solutions are synchronized to this repository using **LeetCommit**.
+> 🎯 **Goal: Become placement-ready through consistent DSA practice.**
 
 ---
 
-# 📊 DSA Progress
+## 📊 LeetCode Stats
 
-<!-- AUTO_STATS_START -->
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/kl2400100001?theme=dark&font=Baloo&ext=heatmap" alt="LeetCode Stats" />
+</p>
 
-| 📌 Metric | Progress |
-|---|---:|
-| 🧩 Problems Solved | **0** |
-| 🟢 Easy | **0** |
-| 🟡 Medium | **0** |
-| 🔴 Hard | **0** |
-| 🎯 Target | **300+** |
+<p align="center">
+  <a href="https://leetcode.com/u/kl2400100001/">
+    <img src="https://img.shields.io/badge/View%20My-LeetCode%20Profile-orange?style=for-the-badge&logo=leetcode" />
+  </a>
+</p>
 
-### Overall Progress
+---
+
+## 🔥 DSA Progress
+
+> **Consistency over speed.**
+
+My target is to continuously solve problems and improve my ability to recognize and apply DSA patterns.
 
 ```text
-[░░░░░░░░░░░░░░░░░░░░] 0%
+Learn
+  ↓
+Understand
+  ↓
+Solve
+  ↓
+Optimize
+  ↓
+Analyze Complexity
+  ↓
+Review
+  ↓
+Repeat
