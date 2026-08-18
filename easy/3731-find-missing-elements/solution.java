@@ -1,12 +1,11 @@
             }
-            sum+=num;
-        }
                 minv=num;
+                maxv=num;
             }if(num<minv){
-        long sum1=(long) maxv*(maxv+1)/2;
-        long sum2=(long) minv*(minv-1)/2;
-
-        long msng=sum1-sum2-sum;
-
-        return new ArrayList<>(List.of((int) msng));
-    }
+        int maxv=Integer.MIN_VALUE;
+        long sum=0;
+        for(int num : nums){
+            if(num>maxv){
+    public List<Integer> findMissingElements(int[] nums) {
+        int minv=Integer.MAX_VALUE;
+class Solution {
