@@ -1,23 +1,49 @@
-# 🧠 LeetCode Solutions
+# 🚀 LeetCode DSA & Placement Preparation
 
-> Auto-synced by [LeetCommit](https://github.com/your-username/commitcode)
+<p align="center">
+  <b>My journey of mastering Data Structures & Algorithms for placements.</b>
+</p>
 
-## Stats
-
-| Metric | Count |
-|--------|-------|
-| Total Solved | 6 |
-| Easy | 0 |
-| Medium | 6 |
-| Hard | 0 |
-| Current Streak | 1 days |
-| Last Synced | 8/18/2026 |
-
-## Languages
-
-| Language | Solutions |
-|----------|-----------|
-| Java | 6 |
+<p align="center">
+  <img src="https://img.shields.io/badge/DSA-In%20Progress-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode">
+  <img src="https://img.shields.io/badge/Placement-Preparation-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/GitHub-Automated%20Sync-black?style=for-the-badge&logo=github">
+</p>
 
 ---
-*Last updated: 2026-08-18T11:01:34.928Z*
+
+## 🎯 About This Repository
+
+This repository contains my **LeetCode Data Structures & Algorithms practice** and is maintained as part of my **placement preparation journey**.
+
+The main goal is not just to solve problems, but to:
+
+- 🧠 Improve problem-solving skills
+- ⚡ Recognize common DSA patterns
+- 📈 Improve coding speed
+- 💡 Understand optimized approaches
+- ⏱️ Analyze time and space complexity
+- 🔁 Revise previously solved problems
+- 🏢 Prepare for technical interviews and coding assessments
+
+New accepted LeetCode solutions are synchronized to this repository using **LeetCommit**.
+
+---
+
+# 📊 DSA Progress
+
+<!-- AUTO_STATS_START -->
+
+| 📌 Metric | Progress |
+|---|---:|
+| 🧩 Problems Solved | **0** |
+| 🟢 Easy | **0** |
+| 🟡 Medium | **0** |
+| 🔴 Hard | **0** |
+| 🎯 Target | **300+** |
+
+### Overall Progress
+
+```text
+[░░░░░░░░░░░░░░░░░░░░] 0%
