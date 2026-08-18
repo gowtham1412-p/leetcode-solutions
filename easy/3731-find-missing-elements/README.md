@@ -60,22 +60,21 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-18T11:33:30.592Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-08-18T11:33:46.033Z  
 
 ```java
             }
-            sum+=num;
-        }
                 minv=num;
+                maxv=num;
             }if(num<minv){
-        long sum1=(long) maxv*(maxv+1)/2;
-        long sum2=(long) minv*(minv-1)/2;
-
-        long msng=sum1-sum2-sum;
-
-        return new ArrayList<>(List.of((int) msng));
-    }
+        int maxv=Integer.MIN_VALUE;
+        long sum=0;
+        for(int num : nums){
+            if(num>maxv){
+    public List<Integer> findMissingElements(int[] nums) {
+        int minv=Integer.MAX_VALUE;
+class Solution {
 
 ```
 
