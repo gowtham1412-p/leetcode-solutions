@@ -60,21 +60,22 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-08-18T11:33:10.440Z  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-08-18T11:33:30.592Z  
 
 ```java
             }
             sum+=num;
         }
-        long sum1=(long) (maxv)*(maxv+1)/2;
-        long sum2=(long) (minv)*(minv-1)/2;
+                minv=num;
+            }if(num<minv){
+        long sum1=(long) maxv*(maxv+1)/2;
+        long sum2=(long) minv*(minv-1)/2;
 
         long msng=sum1-sum2-sum;
 
         return new ArrayList<>(List.of((int) msng));
     }
-}
 
 ```
 
