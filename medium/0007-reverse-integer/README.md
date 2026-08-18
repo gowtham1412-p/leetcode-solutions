@@ -36,21 +36,24 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-08-18T10:53:06.850Z  
+**Runtime:** 1 ms (beats 99.98%)  
+**Memory:** 42.4 MB (beats 80.76%)  
+**Submitted:** 2026-08-18T10:53:11.787Z  
 
 ```java
 class Solution {
     public int reverse(int x) {
         int digit;
-        int rev=0;
+        long rev=0;
         while(x!=0){
             digit=x%10;
             rev=rev*10+digit;
             x=x/10;
+            if(rev > Integer.MAX_VALUE||rev < Integer.MIN_VALUE){
+                return 0;
+            }
         }
-        return rev;
+        return (int) rev;
     }
 }
 ```
