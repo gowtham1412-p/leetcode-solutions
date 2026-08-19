@@ -1,0 +1,16 @@
+1class Solution {
+2    public int maxProduct(int n) {
+3        int sum1=-1,sum2=-1;
+4        while(n!=0){
+5            int digit=n%10;
+6            if(sum1<digit){
+7                sum2=sum1;
+8                sum1=digit;
+9            }else if(sum2<digit){
+10                sum2=digit;
+11            }
+12            n/=10;
+13        }
+14        return sum1*sum2;
+15    }
+16}
