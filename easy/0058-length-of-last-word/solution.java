@@ -3,7 +3,7 @@ class Solution {
         s=s.trim();
         int n=s.length();
         for(int i=n-1;i>=0;i--){
-            if(s.charAt(i)==' '){
+            if(s.charAt(i)!=' '){
                 count++;
             }else if(count>0){
         }
