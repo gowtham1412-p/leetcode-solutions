@@ -32,21 +32,20 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-08-21T17:45:03.561Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.6 MB (beats 96.34%)  
+**Submitted:** 2026-08-21T17:45:10.891Z  
 
 ```java
-class Solution {
-    public int strStr(String haystack, String needle) {
-       
-            return haystack.indexOf(needle);
-        }
-    }
-        return -1;
-        if(haystack.contains(needle)){
+class Solution {
+    public int strStr(String haystack, String needle) {
+       
+        if(haystack.contains(needle)){
+            return haystack.indexOf(needle);
+        }
+        return -1;
+    }
 }
-
 ```
 
 ---
