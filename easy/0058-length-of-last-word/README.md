@@ -41,27 +41,26 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-08-21T17:51:16.235Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.1 MB (beats 51.97%)  
+**Submitted:** 2026-08-21T17:51:23.706Z  
 
 ```java
-class Solution {
-    public int lengthOfLastWord(String s) {
-        s=s.trim();
-        int n=s.length();
-        for(int i=n-1;i>=0;i--){
-            if(s.charAt(i)!=' '){
-                count++;
-            }else if(count>0){
-        }
-                break;
-            }
-    }
-        return count;
-        int count=0;
+class Solution {
+    public int lengthOfLastWord(String s) {
+        s=s.trim();
+        int count=0;
+        int n=s.length();
+        for(int i=n-1;i>=0;i--){
+            if(s.charAt(i)!=' '){
+                count++;
+            }else if(count>0){
+                break;
+            }
+        }
+        return count;
+    }
 }
-
 ```
 
 ---
