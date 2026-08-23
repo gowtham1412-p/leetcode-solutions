@@ -2,11 +2,10 @@ class Solution {
     public boolean isPalindromic(String s) {
         int l=0;
         int r=s.length()-1;
-        if(s==null){
-            return false;
-        }
         while(l<r){
-            
+            if(s.length()==0){
+                return false;
+            }
             int lnum=s.charAt(l);
             int rnum=s.charAt(r);
             if(!Character.isLetterOrDigit(lnum)){
