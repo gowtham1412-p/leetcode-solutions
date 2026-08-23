@@ -62,9 +62,9 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-08-23T11:10:45.552Z  
+**Runtime:** 9 ms (beats 29.93%)  
+**Memory:** 47.1 MB (beats 26.28%)  
+**Submitted:** 2026-08-23T11:10:51.808Z  
 
 ```java
 class Solution {
@@ -96,12 +96,7 @@ class Solution {
                 return true;
             }
             else{
-                int maxdiff=9*Math.abs(blankdiff)/2;
-                if(Math.abs(sumdiff)==maxdiff){
-                    return false;
-                }else{
-                    return true;
-                }
+                return sumdiff!=(rb-lb)*9/2;
             }
 
 
