@@ -18,9 +18,10 @@ class Solution {
                 if(Character.toLowerCase(lnum)!=Character.toLowerCase(rnum)){
                     return false;
                 }
+            }
                 l++;
                 r--;
-            }
+            
         }
         return true;
     }
