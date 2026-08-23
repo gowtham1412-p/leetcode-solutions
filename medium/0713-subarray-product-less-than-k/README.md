@@ -34,13 +34,13 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-08-23T15:30:23.736Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-08-23T15:31:20.418Z  
 
 ```java
         int n=nums.length;
        for(int j=0;j<n;j++){
-        product*=nums[i];
+        product*=nums[j];
        }
         while(product>=k){
             product/=nums[i];
