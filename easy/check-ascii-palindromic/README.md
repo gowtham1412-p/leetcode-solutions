@@ -59,11 +59,33 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-23T02:46:48.997Z  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-08-23T02:48:06.788Z  
 
 ```java
-01101100011001010110010101110100
+class Solution {
+    public boolean isPalindromic(String s) {
+        int l=0;
+        int r=s.length()-1;
+        while(l<r){
+            int lnum=s.charAt(l);
+            int rnum=s.charAt(r);
+            if(!Character.isLetterOrDigit(lnum)){
+                l++;
+            }
+            else if(!Character.isLetterOrDigit(lnum)){
+            r--;
+            }else{
+                if(Character.toLowerCase(lnum)!=Character.toLowerCase(rnum)){
+                    return false;
+                }
+                l++;
+                r--;
+            }
+        }
+        return true;
+    }
+}
 ```
 
 ---
