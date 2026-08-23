@@ -27,12 +27,7 @@ class Solution {
                 return true;
             }
             else{
-                int maxdiff=9*Math.abs(blankdiff)/2;
-                if(Math.abs(sumdiff)==maxdiff){
-                    return false;
-                }else{
-                    return true;
-                }
+                return sumdiff!=(rb-lb)*9/2;
             }
 
 
