@@ -1,16 +1,16 @@
-           if(i>=k){
-            wds-=nums[i-k];
-            set.remove(nums[i-k]);
+           if(j-i+1==k){
+                sum+=j-i;
            }
-           if(i>=k-1 && set.size()==k){
+        }
+                max=Math.max(max,sum);
+                set.remove(nums[i]);
+                i++;
+           j++;
 
+        }
            set.add(nums[i]);
-           wds+=nums[i];
-        for(int i=0;i<n;i++){
-        HashSet<Integer>set=new HashSet<>();
-        long maxs=0;
-        long wds=0;
-        int n=nums.length;
-    public long maximumSubarraySum(int[] nums, int k) {
-class Solution {
-            maxs=Math.max(wds,maxs);
+            if(!set.contains(nums[j])){
+        while(j<n){
+        int j=0;
+        int i=0;
+        return max;
