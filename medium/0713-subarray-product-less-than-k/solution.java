@@ -1,6 +1,6 @@
         int n=nums.length;
        for(int j=0;j<n;j++){
-        product*=nums[i];
+        product*=nums[j];
        }
         while(product>=k){
             product/=nums[i];
