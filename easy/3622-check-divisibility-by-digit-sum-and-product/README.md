@@ -52,23 +52,25 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 41.8 MB  
-**Submitted:** 2026-08-23T10:20:30.852Z  
+**Memory:** 42 MB  
+**Submitted:** 2026-08-23T10:22:09.033Z  
 
 ```java
         int pro=1;
         while(n>0){
             int digit=n%10;
         }
-        
-    }
             sum+=digit;
             pro*=digit;
             n/=10;
-        if(n%(sum+pro)==0)
-           return true;
+        if(sum+pro==0)
+           return false;
         else
-           return false;   
+           return true;   
+        int sum=0;
+    public boolean checkDivisibility(int n) {
+        
+    }
 }
 
 ```
