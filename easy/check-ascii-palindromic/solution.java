@@ -1,10 +1,10 @@
 class Solution {
     public boolean isPalindromic(String s) {
-        if(s==null || s.length()<2){
-            return false;
-        }
         int l=0;
         int r=s.length()-1;
+        if(s==null){
+            return false;
+        }
         while(l<r){
             
             int lnum=s.charAt(l);
@@ -18,10 +18,10 @@ class Solution {
                 if(Character.toLowerCase(lnum)!=Character.toLowerCase(rnum)){
                     return false;
                 }
-            
+            }
                 l++;
                 r--;
-            }
+            
         }
         return true;
     }
