@@ -2,7 +2,7 @@ class Solution {
     public long maximumSubarraySum(int[] nums, int k) {
         int n=nums.length;
         long max=0;
-        int sum=0;
+        long sum=0;
         HashSet<Integer>set=new HashSet<>();
         int i=0;
         int j=0;
