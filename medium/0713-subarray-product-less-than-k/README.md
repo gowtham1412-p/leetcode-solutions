@@ -34,28 +34,27 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-23T15:31:20.418Z  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-08-23T15:33:23.970Z  
 
 ```java
-        int n=nums.length;
-       for(int j=0;j<n;j++){
-        product*=nums[j];
-       }
-        while(product>=k){
-            product/=nums[i];
-        }
-            i++;
-        count+=j-i+1;
-       return count;
-    }
-        int i=0;
-        int count=0;
-        long product=1;
-    public int numSubarrayProductLessThanK(int[] nums, int k) {
-class Solution {
+class Solution {
+    public int numSubarrayProductLessThanK(int[] nums, int k) {
+        int product=1;
+        int count=0;
+        int i=0;
+        int n=nums.length;
+       for(int j=0;j<n;j++){
+        product*=nums[j];
+        while(product>=k){
+            product/=nums[i];
+            i++;
+        }
+        count+=j-i+1;
+       }
+       return count;
+    }
 }
-
 ```
 
 ---
