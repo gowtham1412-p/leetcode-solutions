@@ -33,13 +33,15 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-08-23T15:33:23.970Z  
+**Runtime:** 3 ms (beats 39.19%)  
+**Memory:** 48.9 MB (beats 45.59%)  
+**Submitted:** 2026-08-23T15:33:30.255Z  
 
 ```java
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
+       if(k<=1)
+          return 0;
         int product=1;
         int count=0;
         int i=0;
@@ -47,7 +49,7 @@ class Solution {
        for(int j=0;j<n;j++){
         product*=nums[j];
         while(product>=k){
-            product/=nums[i];
+            product /=nums[i];
             i++;
         }
         count+=j-i+1;
