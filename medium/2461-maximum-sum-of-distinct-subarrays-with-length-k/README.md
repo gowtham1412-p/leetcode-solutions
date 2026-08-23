@@ -49,26 +49,27 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-08-23T11:33:30.752Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-08-23T11:43:14.513Z  
 
 ```java
+           while(set.contains(nums[j])){
+            
+           set.remove(nums[i]);
+           sum-=nums[i];
            if(j-i+1==k){
-                sum+=j-i;
-           }
                 max=Math.max(max,sum);
-                set.remove(nums[i]);
-                i++;
-           j++;
-
-        }
-            set.add(j);
+           }
         while(j<n){
         int j=0;
-        int i=0;
-        return max;
-    }
-}
+           set.add(nums[j]);
+           sum+=nums[j];
+                set.remove(nums[i]);
+                sum-=nums[i];
+                i++;
+           }
+           j++;
+           i++;
 
 ```
 
