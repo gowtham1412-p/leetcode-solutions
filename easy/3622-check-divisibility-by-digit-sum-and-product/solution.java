@@ -5,12 +5,10 @@
             sum+=digit;
             pro*=digit;
             n/=10;
-        if(sum+pro==0)
-           return false;
-        else
-           return true;   
+        
+ 
         int sum=0;
     public boolean checkDivisibility(int n) {
-        
+        return n%(sum+pro)==0;
     }
 }
