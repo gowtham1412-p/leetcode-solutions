@@ -51,27 +51,27 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.8 MB  
-**Submitted:** 2026-08-23T10:25:01.519Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42 MB (beats 95.86%)  
+**Submitted:** 2026-08-23T10:25:06.856Z  
 
 ```java
-        int pro=1;
-        while(n1>0){
-            int digit=n1%10;
-        }
-            sum+=digit;
-            pro*=digit;
-            n1/=10;
-        
- 
-        int sum=0;
-    public boolean checkDivisibility(int n) {
-        return n%(sum+pro)==0;
-    }
-class Solution {
-        int n1=n;
-
+class Solution {
+    public boolean checkDivisibility(int n) {
+        int sum=0;
+        int n1=n;
+        int pro=1;
+        while(n1>0){
+            int digit=n1%10;
+            sum+=digit;
+            pro*=digit;
+            n1/=10;
+        }
+        
+ 
+        return n%(sum+pro)==0;
+    }
+}
 ```
 
 ---
