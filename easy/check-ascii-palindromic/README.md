@@ -59,17 +59,17 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-08-23T03:03:49.605Z  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-08-23T02:57:04.341Z  
 
 ```java
 class Solution {
     public boolean isPalindromic(String s) {
-        if(s==null || s.length()<2){
-            return false;
-        }
         int l=0;
         int r=s.length()-1;
+        if(s==null){
+            return false;
+        }
         while(l<r){
             
             int lnum=s.charAt(l);
@@ -83,10 +83,10 @@ class Solution {
                 if(Character.toLowerCase(lnum)!=Character.toLowerCase(rnum)){
                     return false;
                 }
-            
+            }
                 l++;
                 r--;
-            }
+            
         }
         return true;
     }
