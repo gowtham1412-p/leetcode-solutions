@@ -48,16 +48,16 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-08-23T11:44:02.650Z  
+**Runtime:** 34 ms (beats 86.19%)  
+**Memory:** 98.6 MB (beats 74.91%)  
+**Submitted:** 2026-08-23T11:44:08.145Z  
 
 ```java
 class Solution {
     public long maximumSubarraySum(int[] nums, int k) {
         int n=nums.length;
         long max=0;
-        int sum=0;
+        long sum=0;
         HashSet<Integer>set=new HashSet<>();
         int i=0;
         int j=0;
