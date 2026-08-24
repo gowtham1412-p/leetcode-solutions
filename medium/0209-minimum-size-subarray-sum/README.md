@@ -43,24 +43,24 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.3 MB  
-**Submitted:** 2026-08-24T17:15:12.387Z  
+**Submitted:** 2026-08-24T17:16:00.669Z  
 
 ```java
         }
             while(sum>=target){
-              res=Math.max(res,j-i+1);
+              res=Math.min(res,j-i+1);
             }
            
               sum-=nums[i];
               i++;
             sum+=nums[j];
-      return res==Integer.MAX_VALUE ? 0:res;
         for(int j=0;j<n;j++){
         int res=Integer.MAX_VALUE;
         int sum=0;
-        
-}
-}
+        int i=0;
+        int n=nums.length;
+    public int minSubArrayLen(int target, int[] nums) {
+class Solution {
 
 ```
 
