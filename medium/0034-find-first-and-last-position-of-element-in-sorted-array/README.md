@@ -34,24 +34,25 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 43.1 MB  
-**Submitted:** 2026-08-26T18:05:53.013Z  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-08-26T18:17:42.876Z  
 
 ```java
-class Solution {
-    public int[] searchRange(int[] nums, int target) {
-        int first=-1;
-        int last=-1;
-        int n=nums.length;
-        for(int i=0;i<n;i++){
-            if(nums[i]==target){
-                if(first==-1){
-                    first=i;
-                }
-                last=i;
-            }else if(nums[i]>target)
-                break;
+            int mid=left+(right-left)/2;
+        while(left<=right){
+        }
+            if(mid==target){
+                last=mid;
+                left=mid+1;
+               
+
+            }else if(mid<target){
+                left=mid+1;
+            }else{
+                right=mid-1;
             }
+
+        }
         return new int[]{first,last};
 
 ```
