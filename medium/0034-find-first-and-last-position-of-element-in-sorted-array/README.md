@@ -35,25 +35,25 @@ Constraints:
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.9 MB  
-**Submitted:** 2026-08-26T18:20:43.259Z  
+**Submitted:** 2026-08-26T18:22:02.691Z  
 
 ```java
+               
+
+            }else if(nums[mid]<target){
+                left=mid+1;
             }else{
                 right=mid-1;
             }
 
         }
+        right=nums.length-1;
         while(left<=right){
             int mid=left+(right-left)/2;
             if(nums[mid]==target){
                 last=mid;
+        left=0;
                 left=mid+1;
-               
-
-            }else if(mid<target){
-                left=mid+1;
-            }else{
-                right=mid-1;
 
 ```
 
