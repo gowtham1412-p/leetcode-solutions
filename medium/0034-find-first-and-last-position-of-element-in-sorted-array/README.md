@@ -33,27 +33,50 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-26T18:21:18.121Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 48 MB (beats 87.80%)  
+**Submitted:** 2026-08-26T18:22:09.658Z  
 
 ```java
-            int mid=left+(right-left)/2;
-            if(nums[mid]==target){
-                last=mid;
-        while(left<=right){
-        }
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+       int first=-1, last=-1;
+       int left=0;
+       int right=nums.length-1;
+        while(left<=right){
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target){
+                first=mid;
+                right=mid-1;
+               
 
-            }
-                right=mid-1;
-            }else{
-                left=mid+1;
-            }else if(nums[mid]<target){
+            }else if(nums[mid]<target){
+                left=mid+1;
+            }else{
+                right=mid-1;
+            }
 
-               
-                right=mid-1;
-                first=mid;
+        }
+        left=0;
+        right=nums.length-1;
+        while(left<=right){
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target){
+                last=mid;
+                left=mid+1;
+               
 
+            }else if(nums[mid]<target){
+                left=mid+1;
+            }else{
+                right=mid-1;
+            }
+
+        }
+        return new int[]{first,last};
+    }
+    
+}
 ```
 
 ---
