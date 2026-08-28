@@ -27,24 +27,23 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1540 ms (beats 17.16%)  
-**Memory:** 48.4 MB (beats 93.76%)  
-**Submitted:** 2026-08-28T18:01:39.220Z  
+**Runtime:** 25 ms (beats 46.33%)  
+**Memory:** 48.7 MB (beats 70.86%)  
+**Submitted:** 2026-08-28T18:02:01.290Z  
 
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        int n=nums.length;
+        Map<Integer,Integer> map=new HashMap<>();
+        map.put(0,1);
+        int prefix=0;
         int count=0;
-        for(int i=0;i<n;i++){
-            int sum=0;
-            for(int j=i;j<n;j++){
-                sum+=nums[j];
-            
-        
-        if(sum==k)
-           count++;
-        }
+        for (int num : nums) {
+            prefix += num;
+
+            count+=map.getOrDefault(prefix - k, 0);
+
+            map.put(prefix,map.getOrDefault(prefix, 0) + 1);
         }
         return count;
     }
