@@ -46,27 +46,28 @@ Follow up:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-08-28T18:11:58.431Z  
+**Runtime:** 5 ms (beats 22.17%)  
+**Memory:** 48.7 MB (beats 50.82%)  
+**Submitted:** 2026-08-28T18:12:04.272Z  
 
 ```java
-        int count=0;
-        while(num>0){
-           if((num&1)==1){
-            count++;
-           }
-           num=num>>1;
-        }
-    }
-        for(int i=0;i<=n;i++){
-        arr[i]=count;
-        int num=i;
-    return arr;
-        int arr[]=new int[n+1];
-    }
+class Solution {
+    public int[] countBits(int n) {
+        int arr[]=new int[n+1];
+        for(int i=0;i<=n;i++){
+        int count=0;
+        int num=i;
+        while(num>0){
+           if((num&1)==1){
+            count++;
+           }
+           num=num>>1;
+        }
+        arr[i]=count;
+    }
+    return arr;
+    }
 }
-
 ```
 
 ---
