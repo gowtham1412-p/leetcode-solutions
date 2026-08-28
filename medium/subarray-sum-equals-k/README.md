@@ -1,0 +1,38 @@
+# Subarray Sum Equals K
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+_Description not available._
+
+## Solution
+
+**Language:** unknown  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-08-28T18:01:24.404Z  
+
+```unknown
+1class Solution {
+2    public int subarraySum(int[] nums, int k) {
+3        int n=nums.length;
+4        int count=0;
+5        for(int i=0;i<n;i++){
+6            int sum=0;
+7            for(int j=i;j<n;j++){
+8                sum+=nums[j];
+9            
+10        
+11        if(sum==k)
+12           count++;
+13        }
+14        }
+15        return count;
+16    }
+17}
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/)
