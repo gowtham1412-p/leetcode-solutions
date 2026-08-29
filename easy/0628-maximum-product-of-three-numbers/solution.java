@@ -9,4 +9,5 @@ class Solution {
         }
         return max;
         int max=0;
+        Arrays.sort(nums);
 }
