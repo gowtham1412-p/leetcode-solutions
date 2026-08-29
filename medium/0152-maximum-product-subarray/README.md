@@ -37,8 +37,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-29T17:59:36.770Z  
+**Memory:** 41.9 MB  
+**Submitted:** 2026-08-29T17:59:09.062Z  
 
 ```java
 class Solution {
@@ -46,7 +46,7 @@ class Solution {
         int n=nums.length;
         int max=Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
-              pro*=nums[j];
+              pro*=nums[i];
         }
     }
         return max;
