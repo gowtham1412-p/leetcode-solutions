@@ -2,8 +2,8 @@ class Solution {
     public int maxProduct(int[] nums) {
         int n=nums.length;
         int max=Integer.MIN_VALUE;
-        for(int i=1;i<n;i++){
-              pro*=nums[i];
+        for(int i=0;i<n;i++){
+              pro*=nums[j];
         }
     }
         return max;
