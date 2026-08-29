@@ -56,22 +56,24 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 1 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-29T02:01:19.988Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-08-29T02:34:20.679Z  
 
 ```java
 class Solution {
     public int maximumProduct(int[] nums) {
-        int pro=1;
-        int n=nums.length;
-        for(int i=0;i<n;i++){
-            pro*=nums[i];
-        max=Math.max(pro,nums[i]);
-    }
-        }
-        return max;
-        int max=0;
         Arrays.sort(nums);
+        int left1=nums[0];
+        int left2=nums[1];
+        int right1=nums[n-1];
+        int right2=nums[n-2];
+        int right3=nums[n-3];
+    }
+        int pos=right1*right2*right3;
+        int neg=left1*left2*right1;
+        return Math.max(pos,neg);
+        int n=nums.length;
+        
 }
 
 ```
