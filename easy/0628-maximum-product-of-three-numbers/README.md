@@ -55,9 +55,9 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-08-29T01:58:30.940Z  
+**Runtime:** 1 ms  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-08-29T02:01:19.988Z  
 
 ```java
 class Solution {
@@ -71,6 +71,7 @@ class Solution {
         }
         return max;
         int max=0;
+        Arrays.sort(nums);
 }
 
 ```
