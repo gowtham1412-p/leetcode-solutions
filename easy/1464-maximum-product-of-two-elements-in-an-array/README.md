@@ -43,7 +43,7 @@ Constraints:
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.7 MB  
-**Submitted:** 2026-08-29T02:59:10.055Z  
+**Submitted:** 2026-08-29T03:00:41.465Z  
 
 ```java
 class Solution {
@@ -53,11 +53,12 @@ class Solution {
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 curr=(nums[i]-1)*(nums[j]-1);
-            }
-        }
+               max=Math.max(max,curr);
     }
-        return Math.max(max,curr);
         int curr=0;
+        }
+            }
+        return max;
 }
 
 ```
