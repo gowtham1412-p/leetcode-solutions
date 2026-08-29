@@ -42,28 +42,28 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-29T15:01:49.729Z  
+**Runtime:** 2 ms (beats 99.12%)  
+**Memory:** 46.8 MB (beats 14.84%)  
+**Submitted:** 2026-08-29T15:01:54.377Z  
 
 ```java
-        int n=nums.length;
-        int leftsum=0;
-        int rightsum=0;
-        for(int num: nums){
-            rightsum+=num;
-        }
-        int arr[]=new int[n];
-        for(int i=0;i<n;i++){
-            rightsum-=nums[i];
-        }
-            arr[i]=Math.abs(leftsum-rightsum);
-            leftsum+=nums[i];
-        return arr;
-    public int[] leftRightDifference(int[] nums) {
-    }
-class Solution {
-
+class Solution {
+    public int[] leftRightDifference(int[] nums) {
+        int n=nums.length;
+        int leftsum=0;
+        int rightsum=0;
+        for(int num: nums){
+            rightsum+=num;
+        }
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            rightsum-=nums[i];
+            arr[i]=Math.abs(leftsum-rightsum);
+            leftsum+=nums[i];
+        }
+        return arr;
+    }
+}
 ```
 
 ---
