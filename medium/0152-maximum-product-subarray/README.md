@@ -38,7 +38,7 @@ Constraints:
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.7 MB  
-**Submitted:** 2026-08-29T17:55:35.089Z  
+**Submitted:** 2026-08-29T17:57:17.606Z  
 
 ```java
 class Solution {
@@ -49,13 +49,13 @@ class Solution {
         for(int i=1;i<n;i++){
               pro*=nums[i];
         }
-              if(pro>max){
-                max=pro;
-              }if(pro<0){
-                pro=0;
-              }
     }
         return max;
+            for(int j=i;j<n;j++){
+            max=Math.max(max,pro);
+            
+            }  
+}
 
 ```
 
