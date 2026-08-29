@@ -11,5 +11,5 @@
                 sum=0;
             }
     }
-        return sum;
+        return max;
 }
