@@ -6,10 +6,10 @@ class Solution {
         for(int i=1;i<n;i++){
               pro*=nums[i];
         }
-              if(pro>max){
-                max=pro;
-              }if(pro<0){
-                pro=0;
-              }
     }
         return max;
+            for(int j=i;j<n;j++){
+            max=Math.max(max,pro);
+            
+            }  
+}
