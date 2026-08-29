@@ -3,7 +3,7 @@ class Solution {
         int n=nums.length;
         int max=Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
-              pro*=nums[j];
+              pro*=nums[i];
         }
     }
         return max;
