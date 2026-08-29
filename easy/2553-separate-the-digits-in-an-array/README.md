@@ -43,26 +43,35 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 43 MB  
-**Submitted:** 2026-08-29T15:18:30.866Z  
+**Runtime:** 5 ms (beats 82.62%)  
+**Memory:** 46.5 MB (beats 78.17%)  
+**Submitted:** 2026-08-29T15:18:36.147Z  
 
 ```java
-                list.add(temp.get(i));
-              }
-              for(int i=temp.size()-1;i>=0;i--){
-              }
-                num/=10;
+class Solution {
+    public int[] separateDigits(int[] nums) {
+        
+        ArrayList<Integer> list=new ArrayList<>();
 
-        }
-        int arr[]=new int[list.size()];
-        for(int i=0;i<list.size();i++){
-            arr[i]=list.get(i);
-        }
-        return arr;
-    }
+        
+        for(int num:nums){
+        ArrayList<Integer> temp=new ArrayList<>();
+              while(num>0){
+                temp.add(num%10);
+                num/=10;
+              }
+              for(int i=temp.size()-1;i>=0;i--){
+                list.add(temp.get(i));
+              }
+
+        }
+        int arr[]=new int[list.size()];
+        for(int i=0;i<list.size();i++){
+            arr[i]=list.get(i);
+        }
+        return arr;
+    }
 }
-
 ```
 
 ---
