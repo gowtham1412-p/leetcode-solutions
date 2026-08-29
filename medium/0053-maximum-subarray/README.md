@@ -43,8 +43,8 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-29T17:49:14.989Z  
+**Memory:** 42.2 MB  
+**Submitted:** 2026-08-29T17:50:55.380Z  
 
 ```java
     public int maxSubArray(int[] nums) {
@@ -60,7 +60,7 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
                 sum=0;
             }
     }
-        return sum;
+        return max;
 }
 
 ```
