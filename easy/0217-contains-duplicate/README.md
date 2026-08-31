@@ -49,24 +49,23 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-31T17:28:10.655Z  
+**Runtime:** 19 ms (beats 48.77%)  
+**Memory:** 108.1 MB (beats 47.19%)  
+**Submitted:** 2026-08-31T17:28:15.741Z  
 
 ```java
-class Solution {
-    public boolean containsDuplicate(int[] nums) {
-        Set<Integer> set=new HashSet<>();
-        for(int num:nums){
-            if(set.contains(num)){
-                return true;
-            }
-        }
-    }
-            set.add(num);
-        return false;
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Set<Integer> set=new HashSet<>();
+        for(int num:nums){
+            if(set.contains(num)){
+                return true;
+            }
+            set.add(num);
+        }
+        return false;
+    }
 }
-
 ```
 
 ---
