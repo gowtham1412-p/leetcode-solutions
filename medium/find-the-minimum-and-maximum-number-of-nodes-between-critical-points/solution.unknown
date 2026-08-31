@@ -1,0 +1,48 @@
+1# Definition for singly-linked list.
+2# class ListNode:
+3#     def __init__(self, val=0, next=None):
+4#         self.val = val
+5#         self.next = next
+6
+7class Solution:
+8    def nodesBetweenCriticalPoints(self, head: Optional[ListNode]) -> List[int]:
+9        if not head or not head.next or not head.next.next:
+10            return [-1, -1]
+11
+12        prev = head
+13        curr = head.next
+14        index = 1
+15        
+16        first_critical_idx = -1
+17        prev_critical_idx = -1
+18        min_distance = float('inf')
+19
+20        while curr and curr.next:
+21            next_node = curr.next
+22            
+23            # Check if current node is a local minima or maxima
+24            is_maxima = curr.val > prev.val and curr.val > next_node.val
+25            is_minima = curr.val < prev.val and curr.val < next_node.val
+26            
+27            if is_maxima or is_minima:
+28                if first_critical_idx == -1:
+29                    first_critical_idx = index
+30                else:
+31                    # Minimum distance is found between adjacent critical points
+32                    min_distance = min(min_distance, index - prev_critical_idx)
+33                
+34                prev_critical_idx = index
+35            
+36            # Move to the next triplet
+37            prev = curr
+38            curr = next_node
+39            index += 1
+40
+41        # If fewer than 2 critical points were found
+42        if first_critical_idx == -1 or first_critical_idx == prev_critical_idx:
+43            return [-1, -1]
+44
+45        max_distance = prev_critical_idx - first_critical_idx
+46        return [min_distance, max_distance]
+47        
+48        
