@@ -38,8 +38,8 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-09-01T05:49:56.449Z  
+**Memory:** 42.4 MB  
+**Submitted:** 2026-09-01T05:50:28.867Z  
 
 ```java
             return false;
@@ -47,16 +47,16 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
         Arrays.sort(ch);
         char chi[]=t.toCharArray();
         Arrays.sort(chi);
-        
-        if(Arrays.equals(ch,chi)){
-    public boolean isAnagram(String s, String t) {
+        for(int i=0;i<ch.length;i++){
         if(s.length()!=t.length())
-            return true;
-        }else{
-            return false;
+            if(ch[i]!=chi[i]){
+                return false;
+
+            }
         }
+        return true;
+
     }
-}
 
 ```
 
