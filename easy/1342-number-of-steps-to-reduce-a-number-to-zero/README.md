@@ -48,26 +48,25 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-09-01T10:50:46.046Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.2 MB (beats 37.41%)  
+**Submitted:** 2026-09-01T10:50:50.698Z  
 
 ```java
-class Solution {
-    public int numberOfSteps(int num) {
-        int count=0;
-        while(num!=0){
-            if(num%2==0){
-                num/=2;
-            }else{
-        }
-                num-=1;
-            }
-    }
-            count++;
-        return count;
+class Solution {
+    public int numberOfSteps(int num) {
+        int count=0;
+        while(num!=0){
+            if(num%2==0){
+                num/=2;
+            }else{
+                num-=1;
+            }
+            count++;
+        }
+        return count;
+    }
 }
-
 ```
 
 ---
