@@ -48,8 +48,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-09-01T16:36:49.295Z  
+**Memory:** 43 MB  
+**Submitted:** 2026-09-01T16:37:03.166Z  
 
 ```java
             }
@@ -59,13 +59,11 @@ Constraints:
             }else if(sum<target){
                 left++;
             }
+               return new int[]{left+1,right+1};
+            if(sum==target){
         return new int[]{-1,-1};
     }
-               return new int[]{left,right};
 }
-            if(sum==target){
-            int sum=numbers[left]+numbers[right];
-        while(left<right){
 
 ```
 
