@@ -37,28 +37,27 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 94.08%)  
-**Memory:** 46.5 MB (beats 25.35%)  
-**Submitted:** 2026-09-01T04:59:15.589Z  
+**Runtime:** 0 ms  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-09-01T05:49:56.449Z  
 
 ```java
-class Solution {
-    public boolean isAnagram(String s, String t) {
-        if(s.length()!=t.length())
-            return false;
-        char ch[]=s.toCharArray();
-        Arrays.sort(ch);
-        char chi[]=t.toCharArray();
-        Arrays.sort(chi);
-        for(int i=0;i<ch.length;i++){
-            if(ch[i]!=chi[i]){
-                return false;
-
-            }
-        }
-        return true;
-    }
+            return false;
+        char ch[]=s.toCharArray();
+        Arrays.sort(ch);
+        char chi[]=t.toCharArray();
+        Arrays.sort(chi);
+        
+        if(Arrays.equals(ch,chi)){
+    public boolean isAnagram(String s, String t) {
+        if(s.length()!=t.length())
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
+
 ```
 
 ---
