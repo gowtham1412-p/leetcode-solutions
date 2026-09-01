@@ -47,24 +47,29 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 43 MB  
-**Submitted:** 2026-09-01T16:37:03.166Z  
+**Runtime:** 2 ms (beats 95.63%)  
+**Memory:** 48.3 MB (beats 60.92%)  
+**Submitted:** 2026-09-01T16:37:08.536Z  
 
 ```java
-            }
-        }
-            if(sum>target){
-                right--;
-            }else if(sum<target){
-                left++;
-            }
-               return new int[]{left+1,right+1};
-            if(sum==target){
-        return new int[]{-1,-1};
-    }
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int n=numbers.length;
+        int left=0,right=n-1;
+        while(left<right){
+            int sum=numbers[left]+numbers[right];
+            if(sum==target){
+               return new int[]{left+1,right+1};
+            }
+            if(sum>target){
+                right--;
+            }else if(sum<target){
+                left++;
+            }
+        }
+        return new int[]{-1,-1};
+    }
 }
-
 ```
 
 ---
