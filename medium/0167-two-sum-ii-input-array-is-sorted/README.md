@@ -48,8 +48,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-09-01T16:33:53.266Z  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-09-01T16:35:43.843Z  
 
 ```java
         while(left<right){
@@ -65,7 +65,9 @@ Constraints:
             }
         return numbers;
     }
-}
+        int left=0,right=n-1;
+        int n=numbers.length;
+                numbers[0]=left;numbers[1]=right;
 
 ```
 
