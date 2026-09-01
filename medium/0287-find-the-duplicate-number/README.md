@@ -49,22 +49,22 @@ Follow up:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-09-01T14:50:59.070Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-09-01T14:51:25.942Z  
 
 ```java
-       for(int i=0;i<n-1;i++){
-        if(nums[i]==nums[i+1]){
-       }
-            return nums[i];
-        
-    }
-            count++;
+    public int findDuplicate(int[] nums) {
+        HashSet<Integer> set=new HashSet<>();
+        for(int num : nums){
+            if(set.contains(num)){
+                return num;
+            }
+            set.add(num);
         }
-        if(count>=2){
+        return -1;
+    }
 }
-       return -1;
-}
+class Solution {
 
 ```
 
