@@ -1,16 +1,14 @@
-        while(left<right){
-            if(sum==target){
-                   return numbers;
             }
         }
-            int sum=numbers[left]+numbers[right];
             if(sum>target){
                 right--;
             }else if(sum<target){
                 left++;
             }
-        return numbers;
+        return new int[]{-1,-1};
     }
-        int left=0,right=n-1;
-        int n=numbers.length;
-                numbers[0]=left;numbers[1]=right;
+               return new int[]{left,right};
+}
+            if(sum==target){
+            int sum=numbers[left]+numbers[right];
+        while(left<right){
