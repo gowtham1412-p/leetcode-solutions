@@ -30,21 +30,20 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-09-04T16:33:35.480Z  
+**Runtime:** 2 ms (beats 64.51%)  
+**Memory:** 43.7 MB (beats 15.75%)  
+**Submitted:** 2026-09-04T16:33:40.668Z  
 
 ```java
-class Solution {
-    public boolean rotateString(String s, String goal) {
-          if(s.length()!=goal.length()){
-            return false;
-          }
-    }
-          String a=s+s;
-          return a.contains(goal);
+class Solution {
+    public boolean rotateString(String s, String goal) {
+          if(s.length()!=goal.length()){
+            return false;
+          }
+          String a=s+s;
+          return a.contains(goal);
+    }
 }
-
 ```
 
 ---
