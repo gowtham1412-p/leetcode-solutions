@@ -71,7 +71,7 @@ Constraints:
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.8 MB  
-**Submitted:** 2026-09-06T05:01:14.276Z  
+**Submitted:** 2026-09-06T05:05:41.007Z  
 
 ```java
 2 <= n == s.length <= 100
