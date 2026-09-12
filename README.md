@@ -6,20 +6,20 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Solved | 140 |
-| Easy | 70 |
+| Total Solved | 141 |
+| Easy | 71 |
 | Medium | 70 |
 | Hard | 0 |
-| Current Streak | 4 days |
-| Last Synced | 9/6/2026 |
+| Current Streak | 1 days |
+| Last Synced | 9/12/2026 |
 
 ## Languages
 
 | Language | Solutions |
 |----------|-----------|
-| Java | 132 |
+| Java | 133 |
 | unknown | 7 |
 | C | 1 |
 
 ---
-*Last updated: 2026-09-06T05:05:44.331Z*
+*Last updated: 2026-09-12T14:50:36.285Z*
