@@ -69,8 +69,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-09-12T14:50:32.137Z  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-09-12T14:51:11.950Z  
 
 ```java
 3 <= nums.length <= 100
