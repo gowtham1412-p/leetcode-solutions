@@ -1,0 +1,1 @@
+1 <= n == grid.length == grid[i].length <= 10
