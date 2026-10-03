@@ -18,8 +18,9 @@
 | Language | Solutions |
 |----------|-----------|
 | Java | 148 |
-| unknown | 7 |
+| Unknown | 7 |
 | C | 1 |
 
 ---
+
 *Last updated: 2026-10-02T12:37:09.559Z*
