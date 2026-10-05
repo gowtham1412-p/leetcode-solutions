@@ -1,22 +1,25 @@
 # 🧠 LeetCode Solutions
 
-## 📊 LeetCode Statistics
+> Auto-synced by [LeetCommit](https://github.com/your-username/commitcode)
+
+## Stats
 
 | Metric | Count |
-|---|---:|
-| Total Solved | 101 |
-| Easy | 72 |
-| Medium | 27 |
-| Hard | 2 |
-| Contest Rating | 1431 |
-| Contests Attended | 6 |
-| Total Active Days | 40 |
-| Maximum Streak | 14 days |
+|--------|-------|
+| Total Solved | 157 |
+| Easy | 83 |
+| Medium | 74 |
+| Hard | 0 |
+| Current Streak | 1 days |
+| Last Synced | 10/5/2026 |
 
-## 💻 Languages
+## Languages
 
-Language statistics are being verified against the repository's actual solution files.
+| Language | Solutions |
+|----------|-----------|
+| Java | 149 |
+| unknown | 7 |
+| C | 1 |
 
 ---
-
-*Last updated: October 3, 2026*
+*Last updated: 2026-10-05T18:24:58.868Z*
