@@ -1,20 +1,18 @@
 class Solution {
     public boolean threeFibonacciSum(int n) {
-        if(n%2!=0 ||n<0){
+        if(n%2!=0||n<0){
             return false;
         }
-        int tar=n/2;
-        int i=0;
-        int j=1;
-        while(j<tar){
-            int fur=i+j;
-            i=j;
-            j=fur;
+        int ans=n/2;
+        int n1=0,n2=1;
+        while(n2<ans){
+            int res=n1+n2;
+            n1=n2;
+            n2=res;
         }
-        if(j==tar){
-           return true;
+        if(n2==ans){
+            return true;
         }
         return false;
-        
     }
 }
