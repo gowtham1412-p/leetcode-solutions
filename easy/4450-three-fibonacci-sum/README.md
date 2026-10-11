@@ -52,28 +52,26 @@ The first three terms have a sum of `0 + 1 + 1 = 2`.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 100.00%)  
-**Memory:** 42.5 MB (beats 75.00%)  
-**Submitted:** 2026-10-11T02:39:53.010Z  
+**Memory:** 42.7 MB (beats 25.00%)  
+**Submitted:** 2026-10-11T02:48:36.141Z  
 
 ```java
 class Solution {
     public boolean threeFibonacciSum(int n) {
-        if(n%2!=0 ||n<0){
+        if(n%2!=0||n<0){
             return false;
         }
-        int tar=n/2;
-        int i=0;
-        int j=1;
-        while(j<tar){
-            int fur=i+j;
-            i=j;
-            j=fur;
+        int ans=n/2;
+        int n1=0,n2=1;
+        while(n2<ans){
+            int res=n1+n2;
+            n1=n2;
+            n2=res;
         }
-        if(j==tar){
-           return true;
+        if(n2==ans){
+            return true;
         }
         return false;
-        
     }
 }
 ```
