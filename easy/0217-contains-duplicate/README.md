@@ -4,64 +4,59 @@
 
 ## Problem
 
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is distinct.
 
  
-Example 1:
 
+**Example 1:**
 
-Input: nums = [1,2,3,1]
+**Input:** nums = [1,2,3,1]
 
-Output: true
+**Output:** true
 
-Explanation:
+**Explanation:**
 
 The element 1 occurs at the indices 0 and 3.
 
+**Example 2:**
 
-Example 2:
+**Input:** nums = [1,2,3,4]
 
+**Output:** false
 
-Input: nums = [1,2,3,4]
-
-Output: false
-
-Explanation:
+**Explanation:**
 
 All elements are distinct.
 
+**Example 3:**
 
-Example 3:
+**Input:** nums = [1,1,1,3,3,4,3,2,4,2]
 
-
-Input: nums = [1,1,1,3,3,4,3,2,4,2]
-
-Output: true
-
+**Output:** true
 
  
-Constraints:
 
+**Constraints:**
 
-	1 <= nums.length <= 105
-	-109 <= nums[i] <= 109
+- 1 <= nums.length <= 105
+- -109 <= nums[i] <= 109
 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 19 ms (beats 48.77%)  
-**Memory:** 108.1 MB (beats 47.19%)  
-**Submitted:** 2026-08-31T17:28:15.741Z  
+**Runtime:** 29 ms (beats 7.00%)  
+**Memory:** 80.3 MB (beats 99.84%)  
+**Submitted:** 2026-11-08T15:53:32.282Z  
 
 ```java
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> set=new HashSet<>();
-        for(int num:nums){
-            if(set.contains(num)){
-                return true;
+        int n =nums.length;
+        Arrays.sort(nums);
+        for(int i=0;i<n-1;i++){
+               if(nums[i]==nums[i+1]){
+                return true; 
             }
-            set.add(num);
         }
         return false;
     }
