@@ -10,6 +10,8 @@ You have to rotate the image **in-place**, which means you have to modify the in
 
  
 
+Original
+Java
 **Example 1:**
 
 ```
@@ -38,8 +40,8 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.3 MB (beats 77.60%)  
-**Submitted:** 2026-11-09T17:19:02.471Z  
+**Memory:** 43.1 MB (beats 95.11%)  
+**Submitted:** 2026-11-10T18:37:43.440Z  
 
 ```java
 class Solution {
