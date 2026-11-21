@@ -3,10 +3,10 @@
   <h2>LeetCode Solutions</h2>
   <p>Automated with <a href="https://chromewebstore.google.com/detail/lfichjfhhjffkefegggfocoaamejdlpm"><strong>LeetCommit</strong></a> &bull; Synchronized directly to GitHub</p>
   <p>
-    <img src="https://img.shields.io/badge/Total%20Solved-187-brightgreen?style=flat-square&logo=leetcode" alt="Total Solved" />
-    <img src="https://img.shields.io/badge/Streak-1%20Days-orange?style=flat-square&logo=flame" alt="Streak" />
+    <img src="https://img.shields.io/badge/Total%20Solved-188-brightgreen?style=flat-square&logo=leetcode" alt="Total Solved" />
+    <img src="https://img.shields.io/badge/Streak-2%20Days-orange?style=flat-square&logo=flame" alt="Streak" />
     <img src="https://img.shields.io/badge/Easy-99-60B5A6?style=flat-square" alt="Easy" />
-    <img src="https://img.shields.io/badge/Medium-88-FFB800?style=flat-square" alt="Medium" />
+    <img src="https://img.shields.io/badge/Medium-89-FFB800?style=flat-square" alt="Medium" />
     <img src="https://img.shields.io/badge/Hard-0-FF2D55?style=flat-square" alt="Hard" />
   </p>
 </div>
@@ -17,18 +17,18 @@
 
 | Metric | Count |
 | :--- | :--- |
-| **Total Solved** | 187 |
+| **Total Solved** | 188 |
 | **🟢 Easy** | 99 |
-| **🟡 Medium** | 88 |
+| **🟡 Medium** | 89 |
 | **🔴 Hard** | 0 |
-| **🔥 Current Streak** | 1 days |
+| **🔥 Current Streak** | 2 days |
 | **🕒 Last Synced** | 11/21/2026 |
 
 ### 💻 Languages Breakdown
 
 | Language | Solutions |
 | :--- | :--- |
-| **Java** | 179 |
+| **Java** | 180 |
 | **unknown** | 7 |
 | **C** | 1 |
 
