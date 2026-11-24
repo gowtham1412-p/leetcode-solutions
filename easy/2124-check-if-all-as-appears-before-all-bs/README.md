@@ -52,9 +52,9 @@ There are no 'a's, hence, every 'a' appears before every 'b' and we return true.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 54.57%)  
-**Memory:** 42.2 MB (beats 90.98%)  
-**Submitted:** 2026-11-22T18:16:29.688Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.3 MB (beats 64.54%)  
+**Submitted:** 2026-11-24T18:36:03.576Z  
 
 ```java
 class Solution {
