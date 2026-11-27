@@ -68,9 +68,9 @@ Therefore, the answer is 1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 100.00%)  
-**Memory:** 45.8 MB (beats 50.00%)  
-**Submitted:** 2026-11-22T03:22:17.806Z  
+**Runtime:** 2 ms (beats 74.25%)  
+**Memory:** 46.1 MB (beats 32.11%)  
+**Submitted:** 2026-11-27T18:15:50.041Z  
 
 ```java
 class Solution {
